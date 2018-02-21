@@ -10,4 +10,4 @@ install-composer:
 	php -r "unlink('composer-setup.php');"
 
 install-project:
-	php -r "file_exists('env.php') or copy('env.php.orig', 'env.php');"
+	composer install
