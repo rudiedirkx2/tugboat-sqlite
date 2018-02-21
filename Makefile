@@ -1,0 +1,2 @@
+tugboat-init:
+	composer install
