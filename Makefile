@@ -6,8 +6,8 @@ install-server:
 
 install-composer:
 	php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-	php composer-setup.php --install-dir=/usr/bin --filename=composer
+	php composer-setup.php --install-dir=/usr/bin --filename=composer --no-ansi
 	php -r "unlink('composer-setup.php');"
 
 install-project:
-	composer install
+	composer install --no-ansi
