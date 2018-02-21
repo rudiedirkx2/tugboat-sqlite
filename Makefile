@@ -1,2 +1,3 @@
 tugboat-init:
-	composer install
+	ln -sf ${TUGBOAT_ROOT} /var/www/html
+	# composer install
